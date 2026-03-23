@@ -1,0 +1,17 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "compatibility_date": "2025-12-26",
+  "name": "autosign-endfiled",
+  "compatibility_flags": ["nodejs_als"],
+  "observability": {
+    "enabled": true
+  },
+  "kv_namespaces": [
+    {
+      "binding": "KV","id": "a68b43397ee94cd3ac16adec38423568"
+    }
+  ],
+  "triggers": {
+    "crons": ["30 0/2 * * *"]
+  }
+}
